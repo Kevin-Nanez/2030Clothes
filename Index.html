@@ -21,16 +21,16 @@
 
     </head>
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+  <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
     <div class="container">
       <!-- Logo y nombre de la marca a la izquierda -->
-      <a class="navbar-brand" href="#">Mi Marca</a>
+      <a class="navbar-brand fs-4" href="#">Mi Marca</a>
       <!-- Botón hamburguesa para versiones móviles -->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav mx-auto">
+        <ul class="navbar-nav mx-auto fs-4">
           <!-- Enlaces de navegación centrados -->
           <li class="nav-item">
             <a class="nav-link" href="#">Nosotros</a>
@@ -46,7 +46,12 @@
       <!-- Barra de búsqueda, carrito de compras y icono de usuario a la derecha -->
       <div class="d-flex">
         <form class="me-3">
-          <input class="form-control" type="search" placeholder="Buscar" aria-label="Search">
+          <div class="input-group">
+            <input class="form-control " type="search" placeholder="Buscar" aria-label="Search">
+            <button class="btn btn-outline-secondary rounded-end" type="submit">
+              <i class="bi bi-search"></i>
+            </button>
+          </div>
         </form>
         <a class="nav-link ms-3" href="#">
           <i class="bi bi-cart-fill text-black"></i>
@@ -57,11 +62,27 @@
       </div>
     </div>
   </nav>
-  
 
+  <main class="">
     <h1>2030CLOTHES</h1>
 
+  </main>
+  <footer class="bg-white text-center text-lg-start">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 text-lg-start ps-0">
+          <p class="m-4"><strong class="fw-bold">2030Clothes</strong></p>
+        </div>
+        <div class="col-lg-6 text-lg-end pe-0">
+          <p class="m-4">2023 All Rights Reserved</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  
 
+  
 
 
 

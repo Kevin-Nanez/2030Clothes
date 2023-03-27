@@ -6,12 +6,22 @@
     --fontMedium: 'Roboto Medium', sans-serif;
     --fontBold: 'Roboto Black', sans-serif;
 
-
-    
+    --grisMain: #E0E0E0;
+    --grisFooter: #DADADA;
 
 }
 
 
 body{
     font-family:var(--font)!important;
+}
+
+main{
+    min-height: 60rem; 
+    background-color:var(--grisMain) ;
+}
+
+footer{
+    background-color: var(--grisFooter);
+
 }
