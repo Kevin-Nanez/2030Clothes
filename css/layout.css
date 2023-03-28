@@ -9,3 +9,29 @@
 body{
     font-family:var(--fuentePrincipal)!important;
 }
+
+ /* Jumbotron styling */
+ .jumbotron {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXC85ulEu3s5D0YLGacm3axFdm-zcBNBTelAXLLbzIUQ&s");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+  }
+  
+  .jumbotron h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    color: #fff;
+    margin-top: 200px;
+  }
+  
+  .jumbotron p {
+    font-size: 2rem;
+    font-weight: 300;
+    color: #fff;
+    margin-bottom: 3rem;
+  }
+
+  .btn btn-primary{
+    text-align: center;
+  }
