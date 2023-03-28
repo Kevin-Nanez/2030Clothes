@@ -14,7 +14,7 @@
 
 body{
     font-family:var(--font)!important;
-    background-image: url("/img/background-nosotros.jpg");
+    background-image: url("../img/background-nosotros.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -42,9 +42,4 @@ p {
 main{
     min-height: 60rem; 
     background-color:var(--grisMain) ;
-}
-
-footer{
-    background-color: var(--grisFooter);
-
 }

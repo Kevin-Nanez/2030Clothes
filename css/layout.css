@@ -13,37 +13,45 @@
 
 
 body{
-<<<<<<< HEAD
+
     font-family:var(--fuentePrincipal)!important;
 }
+/* Jumbotron styling */
+.jumbotron {
+  background-image: url("../img/EJERCICIO.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 900px;
+  width: 100%;
+}
 
- /* Jumbotron styling */
- .jumbotron {
-    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXC85ulEu3s5D0YLGacm3axFdm-zcBNBTelAXLLbzIUQ&s");
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 600px;
-  }
-  
-  .jumbotron h1 {
-    font-size: 4rem;
-    font-weight: bold;
-    color: #fff;
-    margin-top: 200px;
-  }
-  
-  .jumbotron p {
-    font-size: 2rem;
-    font-weight: 300;
-    color: #fff;
-    margin-bottom: 3rem;
-  }
+.btn btn-primary{
+  text-align: center;
+}
 
-  .btn btn-primary{
-    text-align: center;
-  }
-=======
-    font-family:var(--font)!important;
+#allrights{
+  margin-left: 80%;
+}
+
+.portada{
+  max-width: 100%;
+}
+
+#cards1{
+  margin-top: 100px;
+  margin-left: 60px;
+  margin-right: 60px;
+  margin-block-end: 150px;
+
+}
+
+.card-img-top{
+  height: 400px;
+  width:  200px;
+}
+
+.col{
+  margin-top: 20%;
 }
 
 main{
@@ -53,6 +61,4 @@ main{
 
 footer{
     background-color: var(--grisFooter);
-
 }
->>>>>>> 97ed0260b829471ebd01ced095f429d64bab1e9c
