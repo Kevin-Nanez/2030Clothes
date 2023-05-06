@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "global": "^4.4.0",
+    "serve": "^14.2.0"
+  }
+}

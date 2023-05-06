@@ -1,0 +1,51 @@
+@import url('https://fonts.cdnfonts.com/css/roboto');
+
+:root{
+    --font: 'Roboto', sans-serif;
+    --fontLight: 'Roboto Light', sans-serif;
+    --fontMedium: 'Roboto Medium', sans-serif;
+    --fontBold: 'Roboto Black', sans-serif;
+
+    --grisMain: #E0E0E0;
+    --grisFooter: #DADADA;
+
+}
+
+
+
+body{
+    font-family:var(--font)!important;
+    background-image: url("../img/background-nosotros.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#imagen1 {
+    margin-left: 100px;
+    margin-top: 100px;
+    margin-bottom: 40px;
+}
+
+#imagen2 {
+    float: right;
+    margin-right: 65px;
+    margin-top: 250px;
+}
+
+p { 
+    margin-left: 80px;
+    margin-top: -20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+main{
+    min-height: 60rem; 
+    background-color:var(--grisMain) ;
+}
+
+footer {
+    margin-top: 15rem;
+}
+
