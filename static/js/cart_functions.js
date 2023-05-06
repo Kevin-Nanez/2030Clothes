@@ -1,4 +1,3 @@
-require('dotenv').config()
 
 const deleteBtns = document.querySelectorAll('.delete-one-btn');
 const aumentBtns = document.querySelectorAll('.add-one-btn');
