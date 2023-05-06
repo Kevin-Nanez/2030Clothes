@@ -27,6 +27,7 @@ deleteBtns.forEach(deleteBtn => {
                     product_counter.textContent = `$${parseInt(parseFloat(product_counter.textContent.replace(/[^0-9.-]+/g, ""))) - precioEntero}`
                     precio_total.textContent = `$${parseInt(parseFloat(precio_total.textContent.replace(/[^0-9.-]+/g, ""))) - precioEntero}`
                 } else {
+                    console.log(response)
                     throw new Error(`Error al eliminar el elemento ${id}`);
                 }
             })
