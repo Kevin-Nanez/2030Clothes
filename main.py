@@ -368,21 +368,25 @@ def eliminar_decarrito():
 @login_required
 @app.route("/carrito/disminuirproducto", methods=["DELETE"])
 def disminuir_decarrito():
-    user_id = request.args.get("id")
-    carrito = Cart.query.filter_by(user_id=user_id).first()
-    product_id = request.args.get("product_id")
-    unidades_list = carrito.units.split()
-    product_list = carrito.product_ids.split()
-    indice = product_list.index(product_id)
-    # Aumentar en 1 el valor del número en el índice especificado
-    numero = int(unidades_list[indice])
-    numero -= 1
-    unidades_list[indice] = str(numero)
-    # Convertir la lista de nuevo en una cadena
-    nueva_cadena = ' '.join(unidades_list)
-    carrito.units = nueva_cadena
-    db.session.commit()
-    return jsonify(response={"response": "si"}), 200
+    try:
+        user_id = request.args.get("id")
+        carrito = Cart.query.filter_by(user_id=user_id).first()
+        product_id = request.args.get("product_id")
+        unidades_list = carrito.units.split()
+        product_list = carrito.product_ids.split()
+        indice = product_list.index(product_id)
+        # Aumentar en 1 el valor del número en el índice especificado
+        numero = int(unidades_list[indice])
+        numero -= 1
+        unidades_list[indice] = str(numero)
+        # Convertir la lista de nuevo en una cadena
+        nueva_cadena = ' '.join(unidades_list)
+        carrito.units = nueva_cadena
+        db.session.commit()
+        return jsonify(response={"response": "si"}), 200
+    except Exception as e:
+        return jsonify({'error': str(e)})
+
 
 
 @login_required
