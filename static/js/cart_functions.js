@@ -15,7 +15,7 @@ deleteBtns.forEach(deleteBtn => {
         let precio = "$349"
         console.log(id)
         const precioEntero = parseInt(parseFloat(precio.replace(/[^0-9.-]+/g, "")));
-        fetch(url, {
+        fetch(n_url, {
             method: 'DELETE',
         })
             .then(response => {
@@ -42,7 +42,7 @@ aumentBtns.forEach(aumentBtn => {
         let precio = "$349"
         console.log(id)
         const precioEntero = parseInt(parseFloat(precio.replace(/[^0-9.-]+/g, "")));
-        fetch(url, {
+        fetch(n_url, {
             method: 'PUT',
         })
             .then(response => {
@@ -67,7 +67,7 @@ deleteAllBtns.forEach(deleteAllBtn => {
         const id = deleteAllBtn.id.split('_')[1]; // Obtenemos el valor de ID del botón
         console.log(id)
         let n_url = `${url}/carrito/eliminarproducto?id=${userId}&product_id=${id}`; // URL del elemento a eliminar
-        fetch(url, {
+        fetch(n_url, {
             method: 'DELETE',
         })
             .then(response => {

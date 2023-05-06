@@ -385,6 +385,7 @@ def disminuir_decarrito():
         db.session.commit()
         return jsonify(response={"response": "si"}), 200
     except Exception as e:
+        print(e)
         return jsonify({'error': str(e)})
 
 
