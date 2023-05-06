@@ -11,7 +11,7 @@ console.log(`ID del usuario actual: ${userId}`);
 deleteBtns.forEach(deleteBtn => {
     deleteBtn.addEventListener('click', () => {
         const id = deleteBtn.id.split('_')[1]; // Obtenemos el valor de ID del botón
-        const url = `${url}/carrito/disminuirproducto?id=${userId}&product_id=${id}`; // URL del elemento a eliminar
+        let n_url = `${url}/carrito/disminuirproducto?id=${userId}&product_id=${id}`; // URL del elemento a eliminar
         let precio = "$349"
         console.log(id)
         const precioEntero = parseInt(parseFloat(precio.replace(/[^0-9.-]+/g, "")));
@@ -37,7 +37,7 @@ deleteBtns.forEach(deleteBtn => {
 aumentBtns.forEach(aumentBtn => {
     aumentBtn.addEventListener('click', () => {
         const id = aumentBtn.id.split('_')[1]; // Obtenemos el valor de ID del botón
-        const url = `${url}/carrito/aumentarproducto?id=${userId}&product_id=${id}`; // URL del elemento a eliminar
+        let n_url = `${url}/carrito/aumentarproducto?id=${userId}&product_id=${id}`; // URL del elemento a eliminar
         let precio = "$349"
         console.log(id)
         const precioEntero = parseInt(parseFloat(precio.replace(/[^0-9.-]+/g, "")));
@@ -65,7 +65,7 @@ deleteAllBtns.forEach(deleteAllBtn => {
     deleteAllBtn.addEventListener('click', () => {
         const id = deleteAllBtn.id.split('_')[1]; // Obtenemos el valor de ID del botón
         console.log(id)
-        let url = `${url}/carrito/eliminarproducto?id=${userId}&product_id=${id}`; // URL del elemento a eliminar
+        let n_url = `${url}/carrito/eliminarproducto?id=${userId}&product_id=${id}`; // URL del elemento a eliminar
         fetch(url, {
             method: 'DELETE',
         })
