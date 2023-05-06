@@ -5,7 +5,7 @@ const deleteAllBtns = document.querySelectorAll('.delete-all-btn');
 const userInfo = document.getElementById('user-info');
 const userId = userInfo.getAttribute('data-user-id');
 const precio_total = document.getElementById("carrito-precio-total")
-const url = process.env.APP_BASE_URL
+const url = "https://flask-production-c95b.up.railway.app"
 console.log(`ID del usuario actual: ${userId}`);
 
 deleteBtns.forEach(deleteBtn => {
